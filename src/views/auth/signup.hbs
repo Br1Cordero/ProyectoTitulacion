@@ -1,0 +1,43 @@
+
+<form action="/auth/signup" method="POST" class="form card" autocomplete="off" >
+
+    <div class="form__group">
+        <h2 class="form__title">Regístrate</h2>
+    </div>
+    <fieldset class="form__group">
+        <input class="form__input" type="text" placeholder=" " name="name" id="user" autocomplete="off" value="{{name}}">
+        <label for="user" class="form__label">Ingrese el usuario <i class="fa-solid fa-user icon"></i></label>
+    </fieldset>
+    <br>
+    <fieldset class="form__group">
+        <input class="form__input" type="text" placeholder=" " name="email" id="email" autocomplete="off" value="{{email}}">
+        <label for="email" class="form__label">Ingrese su correo  <i class="fa-regular fa-envelope icon"></i></label>
+    </fieldset>
+    <br>
+    <fieldset class="form__group">
+        <input class="form__input" type="password" placeholder=" " name="password" id="create-password"
+            autocomplete="off" value="{{password}}">
+        <label for="create-password" class="form__label">Su contraseña <i class="fa-solid fa-unlock-keyhole icon"></i>
+        </label>
+    </fieldset>
+    <br>
+
+    <fieldset class="form__group">
+        <input class="form__input" type="password" placeholder=" " name="verifyPassword" id="verify-password"
+            autocomplete="off" value="{{verifyPassword}}">
+        <label for="verify-password" class="form__label">Su contraseña <i class="fa-solid fa-unlock-keyhole icon"></i>
+        </label>
+    </fieldset>
+
+
+
+
+    <div class="form__group form__group-btn ">
+        <button type="button" id="left-long" class="form__btn form__btn-change"> Regresar <i
+                class="fa-solid fa-left-long icon"></i> </button>
+        <button id="signup" type="submit" class="form__btn form__btn-change"> Crear Cuenta <i
+                class="fa-solid fa-user icon"></i></button>
+    </div>
+
+
+</form>

@@ -1,0 +1,24 @@
+<h1 class="center welcome">Es un gusto tenerte aquí</h1>
+    
+{{#each plants}}
+<br>
+<div class="center center-column  data">
+    <details class="card card-center" open>
+
+        <summary>{{name}} <i class="fa-regular fa-eye"></i> <i class="fa-regular fa-eye-slash"></i></summary>
+        <p>Las plagas que contiene la planta {{name}} son :</p>
+        <br>
+        <ul class="list">
+            {{#each plague}}
+            <ol>{{this}}</ol>
+            {{/each}}
+        </ul>
+        <div class="center  ">
+            <a href="/scanner-caco"><button type="button" class="form__btn">Escanear <i class="fa-solid fa-camera"></i></button></a>
+        </div>
+    </details>
+
+    <p class="data__text">Dame un click</p>
+
+</div>
+{{/each}}

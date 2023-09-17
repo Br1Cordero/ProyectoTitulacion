@@ -1,0 +1,21 @@
+@media (max-width: 768px) { 
+    .page{
+        justify-content: center;
+    }
+
+    .logo__header{
+        display: none;
+    }
+    .menu__ul{
+        left: -350px;
+    }
+
+    main {
+        width: 95vw  ;
+        left: 0;
+    }
+
+    .card{
+        width: 80%;
+    }
+}

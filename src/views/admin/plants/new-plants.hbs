@@ -1,0 +1,31 @@
+<div class="center">
+    <form action="/plants/new-plant" method="post" class=" form card">
+        <div class="form__group">
+            <h2 class="form__title">Crear Planta</h2>
+        </div>
+        <fieldset class="form__group">
+            <input class="form__input" type="text" placeholder=" " name="name" id="title">
+            <label for="title" class="form__label">Ingrese el nombre</label>
+        </fieldset>
+        <fieldset class="form__group">
+            <textarea class="form__input" id="description" placeholder=" " name="description"></textarea>
+            <label for="description" class="form__label">Ingrese la descripción</label>
+        </fieldset>
+
+        <div id="plagas-container" class="form__group-container">
+            <fieldset class="form__group">
+                <input type="text" name="plague" class="form__input" placeholder=" ">
+                <label for="description" class="form__label">Ingrese la descripción</label>
+            </fieldset>
+            <br>
+
+        </div>
+        <button type="button" id="add-plague"><i class="fa-solid fa-plus"></i> Añadir</button>
+
+        <div class="form__group form__group-btn ">
+            <button type="submit" class="form__btn ">Guardar</button>
+        </div>
+    </form>
+
+
+</div>

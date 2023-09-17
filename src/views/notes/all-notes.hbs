@@ -1,0 +1,17 @@
+<div class="center">
+    {{#each notes}}
+
+    <article class="form card">
+        {{id}}
+        <h2 class="form__title">{{title}} <a href="/note/edit/{{id}}"> Edit</a></h2>
+        <p>{{description}}</p>
+        <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <section class="form__group form__group-btn">
+                <button type="submit" class="form__btn  danger"> Eliminar</button>
+            </section>
+        </form>
+    </article>
+    {{/each}}
+
+</div>

@@ -1,0 +1,20 @@
+<div class="center">
+    <form action="/notes/edit/{{plant.id}}?_method=put" method="post" class="form card">
+        <div class="form__group">
+            <h2 class="form__title">Editar</h2>
+        </div>
+        
+        <fieldset class="form__group">
+            <input type="text" placeholder=" " name="name" id="name" class="form__input" value="{{plant.name}}">
+            <label for="name" class="form__label">Ingrese el titulo</label>
+        </fieldset>
+        <fieldset class="form__group">
+            <textarea id="description" placeholder=" " name="description" class="form__input">{{plant.description}}</textarea>
+            <label for="description" class="form__label">Ingrese el titulo</label>
+        </fieldset>
+
+        <div class="form__group form__group-btn">
+            <button type="submit" class="form__btn ">Guardar</button>
+        </div>
+    </form>
+</div>
